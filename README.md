@@ -7,7 +7,8 @@
   ```
 - ubuntu系统中备份mysql
   - [table1 table2]省略则备份所有表
-    备份输出也可以指定路径
+  - 备份输出也可以指定路径
+  - 注意是在退出数据库的环境下执行的备份命令（进入数据库后标识符为">"）
     ```
     $ mysqldump -uusername -p dbname [table1 table2] > BackupName.sql
     ```
